@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design · Create webpages with AI</title>
+  <meta name="description" content="An interactive physics collage. Grab, move and throw the pieces.">
+  <link rel="icon" href="assets/design.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="assets/matter.min.js"></script>
+  <script defer src="physics.js"></script>
+</head>
+<body>
+  <header>
+    <button type="button" class="logo" aria-label="Reset the collage">Design</button>
+    <nav aria-label="Main navigation">
+      <button type="button">WORK</button>
+      <button type="button">STUDIO</button>
+      <div class="expertise"><button aria-expanded="false" aria-controls="expertise-menu">EXPERTISE</button><div class="expertise-menu" id="expertise-menu"><button type="button">BRANDING →</button><button type="button">CAMPAIGN →</button><button type="button">DIGITAL →</button></div></div>
+      <button type="button">THOUGHTS</button>
+      <button type="button">CONTACT</button>
+    </nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">MENU</button>
+  </header>
+  <nav id="mobile-menu" hidden aria-label="Mobile navigation"></nav>
+  <main>
+    <section class="playground" aria-label="Interactive collage. Drag and throw the pictures and words. Use arrow keys on a focused piece to move it.">
+      <h1 class="sr-only">GOGO！ CREATE WEBPAGE AI</h1>
+      <div class="piece picture" data-key="jamie" tabindex="0" role="button" aria-label="Drag artwork 1"><img src="assets/art-001.jpg" alt="Colorful 3D shopping bag" draggable="false"></div>
+      <div class="piece picture" data-key="chips" tabindex="0" role="button" aria-label="Drag artwork 2"><img src="assets/art-002.jpg" alt="Playful yellow 3D character" draggable="false"></div>
+      <div class="piece picture" data-key="racquets" tabindex="0" role="button" aria-label="Drag artwork 3"><img src="assets/art-003.jpg" alt="3D smiling character on blue" draggable="false"></div>
+      <div class="piece picture" data-key="ding" tabindex="0" role="button" aria-label="Drag artwork 4"><img src="assets/art-004.jpg" alt="Colorful sculptural characters" draggable="false"></div>
+      <div class="piece picture" data-key="radnor" tabindex="0" role="button" aria-label="Drag artwork 5"><img src="assets/art-005.jpg" alt="Pastel characters in a gift bag" draggable="false"></div>
+      <div class="piece picture" data-key="prowly" tabindex="0" role="button" aria-label="Drag artwork 6"><img src="assets/art-006.jpg" alt="Colorful illustrated friends" draggable="false"></div>
+      <div class="piece picture" data-key="seventh" tabindex="0" role="button" aria-label="Drag artwork 7"><img src="assets/art-007.jpg" alt="Pink illustrated hand on green" draggable="false"></div>
+      <div class="piece word black" data-key="lets" tabindex="0" role="button" aria-label="Drag GOGO！">GOGO！</div>
+      <div class="piece word yellow" data-key="things" tabindex="0" role="button" aria-label="Drag WEBPAGE">WEBPAGE</div>
+      <div class="piece word black" data-key="up" tabindex="0" role="button" aria-label="Drag AI">AI</div>
+      <div class="piece word yellow" data-key="shake" tabindex="0" role="button" aria-label="Drag CREATE">CREATE</div>
+      <div class="piece copy black" data-key="copy" tabindex="0" role="button" aria-label="Drag introduction">Realize efficient information transmission and content presentation through effective visual and interactive forms.</div>
+      <button type="button" class="piece small-link" data-key="work">WORK</button>
+      <button type="button" class="piece small-link" data-key="studio">THE STUDIO</button>
+      <button type="button" class="piece small-link" data-key="contact">CONTACT US</button>
+    </section>
+    
+  </main>
+  <button class="reset" aria-label="Reset the collage" title="Reset collage">↻</button>
+  <p class="sr-only" aria-live="polite" id="announcement"></p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "design-physics-playground",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A zero-dependency interactive physics collage with draggable artwork and click-to-spawn images.",
+  "license": "MIT",
+  "scripts": { "start": "node serve.cjs", "check": "node --check physics.js && node --check serve.cjs" },
+  "engines": { "node": ">=18" }
+}
